@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="exv-S2-F8T">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Top View Controller-->
+        <scene sceneID="fqs-YM-BTX">
+            <objects>
+                <viewController storyboardIdentifier="view1" id="exv-S2-F8T" customClass="topViewController" customModule="marubatuApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fjD-5t-kcB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzE-x4-Tfq">
+                                <rect key="frame" x="176" y="338" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="問題作成"/>
+                                <connections>
+                                    <action selector="questionButton:" destination="exv-S2-F8T" eventType="touchUpInside" id="Ure-3m-RwN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8C-51-QbA">
+                                <rect key="frame" x="180" y="585" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="○☓挑戦"/>
+                                <connections>
+                                    <action selector="marubatuButton:" destination="exv-S2-F8T" eventType="touchUpInside" id="MGT-R1-gSz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="epL-NM-wDa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GsC-Di-p2l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1883" y="86"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="view2" id="BYZ-38-t0r" customClass="ViewController" customModule="marubatuApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkI-WO-ASW">
+                                <rect key="frame" x="20" y="659" width="183" height="183"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JkI-WO-ASW" secondAttribute="height" multiplier="1:1" id="K9o-nP-u3V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="☓">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="falseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pI9-Nd-hkH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfC-Na-Y2F">
+                                <rect key="frame" x="211" y="659" width="183" height="183"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="○">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="trueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Qi-Qi-w2z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJv-AU-m4W">
+                                <rect key="frame" x="20" y="64" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="SPo-ew-MQ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLD-ZL-oYn">
+                                <rect key="frame" x="166" y="415" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HLD-ZL-oYn" secondAttribute="height" multiplier="31:15" id="kfz-0j-scM"/>
+                                </constraints>
+                                <state key="normal" title="作成する"/>
+                                <connections>
+                                    <action selector="questionMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="62g-vF-aSe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBK-x6-m1F">
+                                <rect key="frame" x="20" y="26" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="tapModoru:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oRu-fP-oCm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JkI-WO-ASW" firstAttribute="top" secondItem="HLD-ZL-oYn" secondAttribute="bottom" constant="100" id="0WK-NI-qEj"/>
+                            <constraint firstItem="VfC-Na-Y2F" firstAttribute="leading" secondItem="JkI-WO-ASW" secondAttribute="trailing" constant="8" id="13F-0T-c6n"/>
+                            <constraint firstItem="HLD-ZL-oYn" firstAttribute="top" secondItem="DJv-AU-m4W" secondAttribute="bottom" constant="250" id="1oM-xa-gu9"/>
+                            <constraint firstItem="DJv-AU-m4W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7bH-Pr-84r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JkI-WO-ASW" secondAttribute="bottom" constant="20" id="8of-lo-Wqg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VfC-Na-Y2F" secondAttribute="trailing" constant="20" id="8sz-bK-1oB"/>
+                            <constraint firstItem="DJv-AU-m4W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="EAu-oW-e6N"/>
+                            <constraint firstItem="VfC-Na-Y2F" firstAttribute="height" secondItem="JkI-WO-ASW" secondAttribute="height" id="G2z-ds-D74"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VfC-Na-Y2F" secondAttribute="bottom" constant="20" id="cjC-X4-90I"/>
+                            <constraint firstItem="JkI-WO-ASW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g2B-xk-6jI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DJv-AU-m4W" secondAttribute="trailing" constant="20" id="g4z-Tu-dsb"/>
+                            <constraint firstItem="VfC-Na-Y2F" firstAttribute="width" secondItem="JkI-WO-ASW" secondAttribute="width" id="ok6-TP-IiL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="falseButton" destination="JkI-WO-ASW" id="Cxn-O6-eNh"/>
+                        <outlet property="questionLabel" destination="DJv-AU-m4W" id="pcT-kz-LCF"/>
+                        <outlet property="trueButton" destination="VfC-Na-Y2F" id="KxO-PZ-sFB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1026.0869565217392" y="590.625"/>
+        </scene>
+        <!--Question View Controller-->
+        <scene sceneID="Tfo-ze-8Lm">
+            <objects>
+                <viewController storyboardIdentifier="view3" id="vKu-xH-Qf4" customClass="QuestionViewController" customModule="marubatuApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5P0-nO-A5C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q3d-19-Z6z">
+                                <rect key="frame" x="20" y="124" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="q3d-19-Z6z" secondAttribute="height" multiplier="11:1" id="Fua-H0-e4m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ifL-wy-JZz">
+                                <rect key="frame" x="110" y="208" width="194" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4Ar-9a-8ac"/>
+                                    <constraint firstAttribute="width" constant="131" id="scU-dk-AGG"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="☓"/>
+                                    <segment title="○"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LwT-Uf-vRe">
+                                <rect key="frame" x="72" y="328" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Asd-4t-Vug"/>
+                                    <constraint firstAttribute="height" constant="70" id="h97-Qt-6y9"/>
+                                </constraints>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapSeveButton:" destination="vKu-xH-Qf4" eventType="touchUpInside" id="f42-tO-BwS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqq-zg-WxQ">
+                                <rect key="frame" x="272" y="328" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Vtu-Y2-Dvg"/>
+                                    <constraint firstAttribute="width" constant="70" id="tle-Py-YXq"/>
+                                </constraints>
+                                <state key="normal" title="全て削除">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapAllDeleteButton:" destination="vKu-xH-Qf4" eventType="touchUpInside" id="Tj7-5d-t2Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBi-rT-ckV">
+                                <rect key="frame" x="28" y="42" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="tapBackButton:" destination="vKu-xH-Qf4" eventType="touchUpInside" id="by0-sK-vyY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LwT-Uf-vRe" firstAttribute="top" secondItem="ifL-wy-JZz" secondAttribute="bottom" constant="90" id="2LI-r2-KK5"/>
+                            <constraint firstItem="ifL-wy-JZz" firstAttribute="top" secondItem="q3d-19-Z6z" secondAttribute="bottom" constant="50" id="CME-BN-EAh"/>
+                            <constraint firstItem="kRc-Mb-rpq" firstAttribute="trailing" secondItem="ifL-wy-JZz" secondAttribute="trailing" constant="110" id="Iiv-7f-L8i"/>
+                            <constraint firstItem="ifL-wy-JZz" firstAttribute="leading" secondItem="kRc-Mb-rpq" secondAttribute="leading" constant="110" id="O5b-gH-rk7"/>
+                            <constraint firstItem="Eqq-zg-WxQ" firstAttribute="top" secondItem="ifL-wy-JZz" secondAttribute="bottom" constant="90" id="UTV-7x-mXi"/>
+                            <constraint firstItem="q3d-19-Z6z" firstAttribute="top" secondItem="kRc-Mb-rpq" secondAttribute="top" constant="80" id="Y4h-8m-Jg5"/>
+                            <constraint firstItem="LwT-Uf-vRe" firstAttribute="centerX" secondItem="5P0-nO-A5C" secondAttribute="centerX" constant="-100" id="c7s-ZP-JvR"/>
+                            <constraint firstItem="Eqq-zg-WxQ" firstAttribute="centerX" secondItem="5P0-nO-A5C" secondAttribute="centerX" constant="100" id="hpW-qe-4IX"/>
+                            <constraint firstItem="q3d-19-Z6z" firstAttribute="leading" secondItem="kRc-Mb-rpq" secondAttribute="leading" constant="20" id="mg8-2k-mhl"/>
+                            <constraint firstAttribute="trailing" secondItem="q3d-19-Z6z" secondAttribute="trailing" constant="20" id="w1p-TQ-bkS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kRc-Mb-rpq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TAU-ma-Z4n"/>
+                    <connections>
+                        <outlet property="marubatuContrroller" destination="ifL-wy-JZz" id="K0A-bC-6EE"/>
+                        <outlet property="questionField" destination="q3d-19-Z6z" id="ujL-js-ctm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uT8-SZ-tSU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1026" y="-229"/>
+        </scene>
+        <!--Answer View Controller-->
+        <scene sceneID="Bnv-UZ-eBS">
+            <objects>
+                <viewController storyboardIdentifier="view4" id="qYL-RB-aGP" customClass="AnswerViewController" customModule="marubatuApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nAO-ON-w7d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="VjJ-I3-6hP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Nc-eo-B7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-248" y="192"/>
+        </scene>
+    </scenes>
+</document>
